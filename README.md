@@ -3,3 +3,4 @@
 ## Các chức năng chính
 - Đăng thông tin nhà
   - các trường thông tin nhà được ghi ở đây
+  - define các trường
