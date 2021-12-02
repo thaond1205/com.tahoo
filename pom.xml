@@ -12,7 +12,18 @@
     <artifactId>onehs-property</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>onehs-property</name>
+    <packaging>pom</packaging>
     <description>onehs-property</description>
+
+
+    <modules>
+        <module>onehs-proprerty-service-application</module>
+        <module>onehs-proprerty-service-business</module>
+        <module>onehs-proprerty-service-infastructure</module>
+        <module>onehs-proprerty-service-common</module>
+    </modules>
+
+
     <properties>
         <java.version>11</java.version>
     </properties>
