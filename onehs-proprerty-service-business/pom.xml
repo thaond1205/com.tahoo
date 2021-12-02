@@ -3,34 +3,27 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>vn.onehs</groupId>
+        <artifactId>onehs-property</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>vn.onehs</groupId>
-    <artifactId>onehs-property</artifactId>
+    <artifactId>onehs-proprerty-service-business</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>onehs-property</name>
-    <packaging>pom</packaging>
-    <description>onehs-property</description>
-
-
-    <modules>
-        <module>onehs-proprerty-service-application</module>
-        <module>onehs-proprerty-service-business</module>
-        <module>onehs-proprerty-service-infastructure</module>
-        <module>onehs-proprerty-service-common</module>
-    </modules>
-
-
+    <name>onehs-proprerty-service-business</name>
+    <description>onehs-proprerty-service-business</description>
     <properties>
         <java.version>11</java.version>
     </properties>
     <dependencies>
         <dependency>
+            <groupId>vn.onehs</groupId>
+            <artifactId>onehs-proprerty-service-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
         <dependency>

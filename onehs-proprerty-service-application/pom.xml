@@ -3,36 +3,51 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>vn.onehs</groupId>
+        <artifactId>onehs-property</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>vn.onehs</groupId>
-    <artifactId>onehs-property</artifactId>
+    <artifactId>onehs-proprerty-service-application</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>onehs-property</name>
-    <packaging>pom</packaging>
-    <description>onehs-property</description>
-
-
-    <modules>
-        <module>onehs-proprerty-service-application</module>
-        <module>onehs-proprerty-service-business</module>
-        <module>onehs-proprerty-service-infastructure</module>
-        <module>onehs-proprerty-service-common</module>
-    </modules>
-
-
+    <name>onehs-proprerty-service-application</name>
+    <description>onehs-proprerty-service-application</description>
     <properties>
         <java.version>11</java.version>
     </properties>
     <dependencies>
         <dependency>
+            <groupId>vn.onehs</groupId>
+            <artifactId>onehs-proprerty-service-business</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>vn.onehs</groupId>
+            <artifactId>onehs-proprerty-service-infastructure</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -41,6 +56,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
