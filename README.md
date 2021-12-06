@@ -36,6 +36,7 @@ có nhu cầu! Onehousing là nơi uy tín để các chủ căn hộ đặt ni�
                   - Id
                   - Tên dự bán
                   - Mô tả dự án
+                  - Địa chỉ
                 - PROPERTY 
                   - Id
                   - Tên dự án [refer]
@@ -46,6 +47,7 @@ có nhu cầu! Onehousing là nơi uy tín để các chủ căn hộ đặt ni�
                   - Tổng diện tích nhà
                   - Chiều dài nhà
                   - Chiều rộng nhà
+                  - Chiều cao nhà
                   - Số phòng ngủ
                   - Số phòng tắm
                   - Diện tích phòng khách 
@@ -78,3 +80,6 @@ có nhu cầu! Onehousing là nơi uy tín để các chủ căn hộ đặt ni�
                   - Số lượng
 ## UseCase
   ![img_1.png](img_1.png)
+
+## E-ERD
+  ![img_3.png](img_3.png)
