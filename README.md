@@ -30,6 +30,7 @@ có nhu cầu! Onehousing là nơi uy tín để các chủ căn hộ đặt ni�
   - Khách hàng có nhu cầu muốn xem nhà trực tiếp thì sẽ phải đặt lịch với thời gian cụ thể
 - Xác nhận đặt lịch xem căn hộ
   - Agent sẽ xác nhận và hướng dẫn cho khách hàng khi vào xem nhà
+  - Verify thông tin pháp lý và tính xác thực của căn hộ (Dự kiến)
   
               - Define thông tin
                 - PROJECT
