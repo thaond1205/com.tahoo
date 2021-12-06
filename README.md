@@ -63,6 +63,7 @@ có nhu cầu! Onehousing là nơi uy tín để các chủ căn hộ đặt ni�
                   - Trạng thái
                 - GALLERIES
                   - Id
+                  - Căn hộ 
                   - Media_Type
                   - Url
                 - LEGAL_INFOS
