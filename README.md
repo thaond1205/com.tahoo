@@ -48,5 +48,5 @@
       - Tên tài sản
       - Số lượng
 ## UseCase 
-      ![img.png](img.png)
+      ![](https://i.ibb.co/Wk4p8n8/img.png)
   
