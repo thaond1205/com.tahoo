@@ -85,3 +85,6 @@ có nhu cầu! Onehousing là nơi uy tín để các chủ căn hộ đặt ni�
 
 ## E-ERD
   ![img_3.png](img_3.png)
+  
+## DIAGRAM 
+  ![img_5.png](img_5.png)
