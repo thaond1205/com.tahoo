@@ -21,6 +21,7 @@ public class PropertiesController {
 
     @GetMapping
     public List<PropertiesDto> getAll(){
+        //aaaaa
         return null;
     }
 }
