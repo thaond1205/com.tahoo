@@ -39,19 +39,9 @@ public class PropertiesSql extends BaseModel {
 
     @ManyToOne
     private ProjectsSql projects;
+
     @OneToMany(mappedBy = "property")
-    private List<FurnituresSql> furnitures;
-
-    @OneToOne(mappedBy = "property")
-    private LoanInfosSql loanInfos;
-
-
-    @OneToOne(mappedBy = "property")
-    private GalleriesSql galleries;
-
-    @OneToOne(mappedBy = "property")
-    private LegalInfosSql legalInfos;
-
+    private List<GalleriesSql> galleries;
 
 
 }

@@ -8,10 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import vn.onehs.proprerty.infastructure.base.BaseModel;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.UUID;
 
 @Data
@@ -27,6 +24,6 @@ public class GalleriesSql extends BaseModel {
     private String mediaType;
     private String url;
 
-    @OneToOne
+    @ManyToOne
     private PropertiesSql property;
 }

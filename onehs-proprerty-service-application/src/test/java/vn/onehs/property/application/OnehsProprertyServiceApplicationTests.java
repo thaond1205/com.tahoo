@@ -3,10 +3,10 @@ package vn.onehs.property.application;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class OnehsProprertyServiceApplicationTests {
 
-    @Test
+//    @Test
     void contextLoads() {
     }
 
