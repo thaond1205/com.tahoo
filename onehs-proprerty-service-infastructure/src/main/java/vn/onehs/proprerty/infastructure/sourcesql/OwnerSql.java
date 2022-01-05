@@ -9,6 +9,7 @@ import lombok.experimental.FieldDefaults;
 import vn.onehs.proprerty.infastructure.base.BaseModel;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.UUID;
 
 @Data
@@ -26,7 +27,6 @@ public class OwnerSql extends BaseModel {
     private String address;
     private String gender;
 
-    @ManyToOne
-    @JoinColumn(name = "propertiesId")
-    private  PropertiesSql property;
+    @OneToMany(mappedBy = "owner")
+    private List<PropertiesSql> property;
 }

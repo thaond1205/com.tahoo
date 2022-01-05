@@ -7,12 +7,13 @@ import java.util.List;
 
 @Data
 @AllArgsConstructor
-public class Project {
+public class Owner {
 
     private String id;
-    private String projectName;
+    private String fullname;
+    private String phoneNumber;
     private String address;
-    private String description;
+    private String gender;
 
-    List<Properties> property;
+    private List<Properties> property;
 }

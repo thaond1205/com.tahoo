@@ -1,26 +1,15 @@
-package vn.onehs.proprerty.infastructure.sourcesql;
+package vn.onehs.property.application.dto;
 
-
-import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.experimental.FieldDefaults;
-import vn.onehs.proprerty.infastructure.base.BaseModel;
 
-import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.List;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
+public class PropertiesDto {
 
-@Entity
-@Table(name = "PROPERTIES")
-public class PropertiesSql extends BaseModel {
-
-    @Id
     private String id;
     private String balconyView;
     private BigDecimal numberOfBedrooms;
@@ -37,15 +26,11 @@ public class PropertiesSql extends BaseModel {
     private Double width;
     private Double Long;
 
-    @ManyToOne
-    private ProjectsSql projects;
+    private ProjectDto projects;
 
-    @OneToMany(mappedBy = "property")
-    private List<GalleriesSql> galleries;
+    private List<GalleriesDto> galleries;
 
-    @ManyToOne
-    private OwnerSql owner;
+    private OwnerDto ownner;
 
-    @ManyToOne
-    private AddressSql address;
+    private AddressDto address;
 }

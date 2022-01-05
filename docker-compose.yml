@@ -5,7 +5,8 @@ services:
     image: mysql:latest
     container_name: onehs-mysql-container
     volumes:
-      - "C:/onedb:/var/lib/mysql"
+#      - "C:/onedb:/var/lib/mysql"
+      - "/home/user/desktop/onedb:/var/lib/mysql"
     ports:
       - 3306:3306
     environment:
