@@ -1,2 +1,6 @@
-package vn.onehs.proprerty.common.exception;public class Contants {
+package vn.onehs.proprerty.common.exception;
+
+public class Contants {
+
+
 }

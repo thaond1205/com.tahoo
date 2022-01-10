@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import lombok.experimental.Accessors;
 import lombok.extern.slf4j.Slf4j;
+import vn.onehs.proprerty.common.exception.shared.exception.HousingBusinessError;
+import vn.onehs.proprerty.common.exception.shared.exception.HousingException;
 
 import java.util.List;
 
@@ -39,26 +41,26 @@ public class BaseResponse<T> {
         response.meta.code = OK_CODE;
         return response;
     }
-//
-//    public static BaseResponse<Void> ofFailed(HousingBusinessError errorCode) {
-//        return ofFailed(errorCode, null);
-//    }
-//
-//    public static BaseResponse<Void> ofFailed(HousingBusinessError errorCode, String message) {
-//        return ofFailed(errorCode, message, null);
-//    }
-//
-//    public static BaseResponse<Void> ofFailed(HousingBusinessError errorCode, String message, List<FieldViolation> errors) {
-//        BaseResponse<Void> response = new BaseResponse<>();
-//        response.meta.code = String.valueOf(errorCode.getCode());
-//        response.meta.message = (message != null) ? message : errorCode.getMessage();
+
+    public static BaseResponse<Void> ofFailed(HousingBusinessError errorCode) {
+        return ofFailed(errorCode, null);
+    }
+
+    public static BaseResponse<Void> ofFailed(HousingBusinessError errorCode, String message) {
+        return ofFailed(errorCode, message, null);
+    }
+
+    public static BaseResponse<Void> ofFailed(HousingBusinessError errorCode, String message, List<FieldViolation> errors) {
+        BaseResponse<Void> response = new BaseResponse<>();
+        response.meta.code = String.valueOf(errorCode.getCode());
+        response.meta.message = (message != null) ? message : errorCode.getMessage();
 //        response.meta.errors = (errors != null) ? Lists.newArrayList(errors) : null;
-//        return response;
-//    }
-//
-//    public static BaseResponse<Void> ofFailed(HousingException exception) {
-//        return ofFailed(exception.getErrorCode(), exception.getMessage());
-//    }
+        return response;
+    }
+
+    public static BaseResponse<Void> ofFailed(HousingException exception) {
+        return ofFailed(exception.getErrorCode(), exception.getMessage());
+    }
 
     @Data
     @JsonInclude(JsonInclude.Include.NON_NULL)

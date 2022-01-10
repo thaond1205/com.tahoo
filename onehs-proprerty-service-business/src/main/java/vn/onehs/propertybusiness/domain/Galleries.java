@@ -11,5 +11,4 @@ public class Galleries {
     private String mediaType;
     private String url;
 
-    private Properties property;
 }

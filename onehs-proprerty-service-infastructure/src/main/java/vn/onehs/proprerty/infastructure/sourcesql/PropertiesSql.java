@@ -40,7 +40,7 @@ public class PropertiesSql extends BaseModel {
     @ManyToOne
     private ProjectsSql projects;
 
-    @OneToMany(mappedBy = "property")
+    @OneToMany(mappedBy = "property", fetch = FetchType.EAGER)
     private List<GalleriesSql> galleries;
 
     @ManyToOne
