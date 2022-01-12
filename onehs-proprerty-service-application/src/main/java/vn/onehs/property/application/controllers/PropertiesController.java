@@ -1,6 +1,7 @@
 package vn.onehs.property.application.controllers;
 
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +17,7 @@ import java.util.List;
 
 
 @CrossOrigin(origins = "*", maxAge = 3600)
+@Slf4j
 @RestController
 @RequestMapping(URL_BASE+"/properties")
 public class PropertiesController {
@@ -29,6 +31,7 @@ public class PropertiesController {
     @GetMapping
     public BaseResponse<List<PropertiesDto>> getAll(){
         var properties = usecase.getAll();
+        log.info("GetAll properties!");
         return BaseResponse.ofSucceeded(mapper.to(properties));
     }
 }
