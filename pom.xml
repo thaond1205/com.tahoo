@@ -17,11 +17,11 @@
 
 
     <modules>
-        <module>onehs-proprerty-service-application</module>
-        <module>onehs-proprerty-service-business</module>
-        <module>onehs-proprerty-service-infastructure</module>
-        <module>onehs-proprerty-service-common</module>
-        <module>onehs-proprerty-service-worker</module>
+        <module>application</module>
+        <module>business</module>
+        <module>infastructure</module>
+        <module>common</module>
+        <module>worker</module>
     </modules>
 
 
